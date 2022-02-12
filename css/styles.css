@@ -1,0 +1,95 @@
+:root {
+  /* шрифты */
+  --primary-font: "open sans", sans-serif;
+  --secondary-font: raleway, sans-serif;
+  /* фон слайдера */
+  --bcg-slider-overlay: rgba(25, 28, 38, 0.2);
+  /* фон секции услуги и цены */
+  --bcg-price: #111319;
+  /* фон секции контакты */
+  --bcg-contacts: #191c26;
+  /* основной цвет текста */
+  --color-primary: #303030;
+  /* цвет навигации и заголовоком на темных фонах */
+  --color-primary-dark: #ffffff;
+  /* цвет активности ссылок */
+  --color-active: #ff6c00;
+  /* Цвет текста выше заглавия на темном фоне */
+  --color-upper-text-dark: rgba(157, 164, 189, 0.6);
+
+  --color-sub-text-dark: #9da4bd;
+}
+body {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: var(--color-primary);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/* секция Хедер */
+
+/* секция Герой */
+.header,
+.hero {
+  background-color: var(--bcg-slider-overlay);
+}
+.header {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--color-primary-dark);
+}
+.nav-link {
+  color: inherit;
+}
+.nav-link:hover,
+.nav-link:focus,
+.header-phone:hover,
+.header-phone:focus {
+  color: var(--color-active);
+}
+.header-phone {
+  text-transform: uppercase;
+  color: inherit;
+}
+/* hero */
+.upper-title {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.hero-upper-title {
+  color: var(--color-upper-text-dark);
+}
+.hero-title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  color: var(--color-primary-dark);
+}
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1.67;
+  white-space: pre;
+  color: var(--color-sub-text-dark);
+}
+
+/* price */
+.price {
+  background-color: var(--bcg-price);
+}
+.contacts {
+  background-color: var(--bcg-contacts);
+}
